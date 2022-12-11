@@ -1,0 +1,32 @@
+extends ./layout/index
+
+block slider
+    .slider
+        h1 Rio de janeiro
+        em Aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre nosotros
+        .row.mb-5
+            .col-md-6
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="sobre nosotros", class="img-fluid")
+        include ./layout/bloque_viajes 
+
+    .descuento
+        .container 
+            .row
+                .col-md-6
+                    .contenido
+                        h3 10% de Descuento
+                        p.titulo Viaje a Canada
+                        p fecha 20 marzo de 2023 - 28 de marzo de 2023
+                        p Precio $ 2500 dolares
+
+    .container
+        h2.mt-5.text-center Testimonios
+        include ./layout/bloque_testimonios  
+                         
